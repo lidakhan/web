@@ -11,7 +11,7 @@
 <table>
     <tr>
        <td>
-        <form method="post" action="/springwtk/view/WebTechProject/MID/CODE/LAB1/home.php">
+        <form method="post" action="/Project/web/MID/LAB1/home.php">
             
             <fieldset>
                 <legend>Seller Information</legend>
