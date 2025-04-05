@@ -1,0 +1,72 @@
+/* Body styling */
+body {
+    background-color: #75b6de;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Form container */
+form {
+    position: relative;            /* using position */
+    display: block;                /* block-level by default */
+    max-width: 600px;              /* max-width set */
+    margin: 50px auto;             /* center the form with auto margin */
+    padding: 20px;                 /* space inside the form */
+    border: 2px solid #ccc;        /* border around form */
+    border-radius: 10px;
+    background-color: #f39256;
+    z-index: 1;                    /* in case of layering */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Table cell spacing */
+td {
+    padding: 8px;
+    margin: 0;
+    display: inline-block;         /* each td behaves like a block */
+    width: 48%;                    /* fit nicely in a row if needed */
+}
+
+/* Inputs and selects */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+input[type="submit"] {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Legend styling */
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #eee;
+}

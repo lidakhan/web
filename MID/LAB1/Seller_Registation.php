@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Registation</title>
+    <link rel="stylesheet" href="../LAB2/seller.css">
 </head>
 <body>
     <h1 align="Center">Ticket Seller Registation</h1>
@@ -134,7 +135,7 @@
         <table>
             <tr>
                 <td align="left">
-                    <input type="submit" name="submit" value="Register">  <!--Here, value="Register" sets the text inside the button-->
+                    <input type="submit" class="submit" name="submit" value="Register">  <!--Here, value="Register" sets the text inside the button-->
                 </td>
             </tr>
         </table>  
@@ -144,7 +145,7 @@
     <table>
         <tr>
             <td>
-                <th>Already have an account <a href="">Login here</a> </th>
+                <th >Already have an account <a href="" id="login">Login here</a> </th>
             </td>
         </tr>
     </table>

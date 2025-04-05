@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Registration</title>
+    <link rel="stylesheet" href="../LAB2/customer.css">
 </head>
 <body>
     <form action="world.php" method="post">

@@ -1,0 +1,100 @@
+/* Body styling */
+body {
+    margin: 0;
+    padding: 20px;
+    background-color:   #2F4F4F;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading centered */
+h1 {
+    text-align: center;
+    color: #eee6e6;
+}
+
+/* Form container */
+form {
+    position: relative;            /* using position */
+    max-width: 700px;              /* max width */
+    margin: 0 auto;                /* center the form horizontally */
+    padding: 20px;                 /* space inside */
+    border: 2px solid #ccc;        /* border */
+    background-color:  #85929e ;
+    z-index: 1;                    /* stacking layer */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tables inside form */
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table cells */
+td, th {
+    padding: 10px;                 /* padding inside cells */
+    margin: 0;
+    display: inline-block;         /* display as inline-block */
+    width: 45%;
+    vertical-align: top;
+}
+
+/* Inputs and selects */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Radio and checkbox spacing */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Submit button */
+input.submit {
+    display: inline-block;
+    background-color: #1f22de;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+input.submit:hover {
+    background-color: #218838;
+}
+
+/* Terms section */
+table:last-of-type td {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    z-index: 0;
+    position: relative;
+}
+
+#login{
+    color: aliceblue;
+}
