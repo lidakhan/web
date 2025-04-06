@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Registation</title>
-    <link rel="stylesheet" href="../LAB2/seller.css">
+    <link rel="stylesheet" href="SELLER.css">
 </head>
 <body>
-    <h1 align="Center">Ticket Seller Registation</h1>
-  
+    <div>
+        <h1 align="Center">Ticket Seller Registation</h1>
+    </div>
+
 <table>
     <tr>
        <td>
         <form method="post" action="/Project/web/MID/LAB1/home.php">
             
+        <div class="box1">
             <fieldset>
                 <legend>Seller Information</legend>
                     <table>
@@ -49,8 +52,10 @@
                         </tr>
                     </table>
             </fieldset>
+        </div>
             <br>
 
+            <div class="box2">
             <fieldset>
                 <legend>Company Details</legend>
                 <table>
@@ -81,8 +86,10 @@
                 
                 </table>
             </fieldset>
+            <div>
             <br>
 
+            <div class="box3">
             <fieldset >
                 <legend>Business Details</legend>
                 <table>
@@ -122,6 +129,7 @@
                     </tr>
                 </table>
             </fieldset>
+        </div>
 
         <table>
             <tr>
@@ -153,6 +161,7 @@
  </td>
 
 
+  
     <td>
     <img src="images/bus.avif"  width="1024" height="600">
     </td>
