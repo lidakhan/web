@@ -1,3 +1,13 @@
+<?php
+include "../control/validation.php";
+$Sname = Namevalidate();
+$Email = EmailValidate();
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,29 +17,30 @@
     <link rel="stylesheet" href="SELLER.css">
 </head>
 <body>
-    <div>
+    <div class="top">
         <h1 align="Center">Ticket Seller Registation</h1>
     </div>
 
 <table>
     <tr>
        <td>
-    <form method="post" action="/Project/web/MID/LAB1/home.php" onsubmit="return validate()">
+    <form method="post" action="">
             
         <div class="box1">
-            <fieldset>
-                <legend>Seller Information</legend>
+            
+                <h3 style="color:yellow"><label>Seller Information</label></h3>
                     <table>
                         <tr>
                             <th align="left">Seller Name:</th>
                             <td class="field-group">
-                                <input type="text" name="seller_name" id="S_name" placeholder="Kaushik"> <span class="error" style="color:red" id="one"></span>
+                                <input type="text" name="seller_name" id="S_name" placeholder="Kaushik"> <span style="color:red"><?php echo "$Sname" ?></span>
+
                             </td> 
                         </tr>
                         <tr>
                             <th align="left">Email Address:</th>
                             <td>
-                                <input type="text" name="email" id="email" placeholder="user@gmail.com"> <span style="color:red" id="two"></span>
+                                <input type="text" name="email" id="email" placeholder="user@gmail.com"> <span style="color:red" id="two"><?php echo "$Email" ?></span>
                             </td>
                         </tr>
                         <tr>
@@ -51,13 +62,14 @@
                             </td>
                         </tr>
                     </table>
-            </fieldset>
+            
         </div>
-            <br>
 
-            <div class="box2">
-            <fieldset>
-                <legend>Company Details</legend>
+         <br>
+
+         <div class="box2">
+            
+           <h3 style="color:yellow"> <label>Company Details</label>  </h3>
                 <table>
                     <tr>
                         <th align="left">Company Name:</th>
@@ -88,13 +100,13 @@
                     </tr>
                 
                 </table>
-            </fieldset>
-            <div>
-            <br>
+            
+        <div>
+        <br>
 
             <div class="box3">
-            <fieldset >
-                <legend>Business Details</legend>
+            
+                <h3 style="color:yellow"> <label>Business Details</label></h3>
                 <table>
                     <tr>
                         <th align="left">Bus Name:</th>
@@ -135,7 +147,7 @@
                         </td> -->
                     </tr>
                 </table>
-            </fieldset>
+           
         </div>
 
         <table>
@@ -152,11 +164,12 @@
         <table>
             <tr>
                 <td align="left">
-                    <input type="submit" class="submit" name="submit" value="Register" id="submit_btn"> <span  id="fourtheen"></span> <!--Here, value="Register" sets the text inside the button-->
+                    <input type="submit" class="submit" name="SUBMIT" value="Register" id="submit_btn"> <span  id="fourtheen"></span> <!--Here, value="Register" sets the text inside the button-->
                 </td>
             </tr>
         </table>  
     </form>
+    
         <br><br><br>
         
     <table>
@@ -178,7 +191,7 @@
   </tr>
 </table>
 
-<script src="../LAB4/validation.js"></script>
+
 
 </body>
 </html>
