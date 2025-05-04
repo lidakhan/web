@@ -2,6 +2,17 @@
 include "../control/validation.php";
 $Sname = Namevalidate();
 $Email = EmailValidate();
+$Phone_num = PhoneValidate();
+$password = PasswordValidate();
+$conf_pass = Confirm_PasswordValidate();
+$company_name = Company_Name();
+$company_add = Company_address();
+$services = Service_Catagory();
+$bus_name = Bus_Name();
+$license = License_number();
+$bus_type = Bus_type();
+$terms = Terms_Condition();
+
 
 ?>
 
@@ -46,19 +57,19 @@ $Email = EmailValidate();
                         <tr>
                             <th align="left">Phone Number:</th>
                             <td>
-                                <input type="text" name="phone_number" id="PH_num" placeholder="019********"> <span style="color:red" id="three"></span>
+                                <input type="text" name="phone_number" id="PH_num" placeholder="019********"> <span style="color:red" id="three"><?php echo "$Phone_num" ?></span>
                             </td>
                         </tr>
                         <tr>
                             <th align="left">Password:</th>
                             <td>
-                                <input type="password" name="password" id="Pass" placeholder="abc1$&"> <span style="color:red" id="four"></span>
+                                <input type="password" name="password" id="Pass" placeholder="abcd1$&"> <span style="color:red" id="four"><?php echo "$password"?></span>
                             </td>
                         </tr>
                         <tr>
                             <th align="left">Confirm Password:</th> 
                             <td>
-                                <input type="password" name="confirm_password" id="Conf_pass" placeholder="abc1$&"> <span style="color:red" id="five"></span>
+                                <input type="password" name="confirm_password" id="Conf_pass" placeholder="abcd1$&"> <span style="color:red" id="five"><?php echo"$conf_pass" ?></span>
                             </td>
                         </tr>
                     </table>
@@ -74,13 +85,13 @@ $Email = EmailValidate();
                     <tr>
                         <th align="left">Company Name:</th>
                         <td>
-                            <input type="text" name="company_name" id="Com_name" placeholder="SuperBlock or tigerIT"> <span style="color:red" id="six"></span>
+                            <input type="text" name="company_name" id="Com_name" placeholder="SuperBlock or tigerIT"> <span style="color:red" id="six"><?php echo"$company_name"?></span>
                         </td>
                     </tr>
                     <tr>
                         <th align="left">Company Address:</th>
                         <td>
-                            <input type="text" name="company_address" id="Com_add" placeholder="Kuril,Dhaka,1210"> <span style="color:red" id="seven"></span>
+                            <input type="text" name="company_address" id="Com_add" placeholder="Kuril,Dhaka,1210"> <span style="color:red" id="seven"><?php echo"$company_add"?></span>
                         </td>
                     </tr>
                     <tr>
@@ -94,7 +105,7 @@ $Email = EmailValidate();
                                     <option value="School">School</option>
                                     <option value="Corporate">Corporate</option>
                                 </select>
-                            <span style="color:red" id="eight"></span>
+                            <span style="color:red" id="eight"><?php echo"$services"?></span>
 
                         </td>
                     </tr>
@@ -111,14 +122,14 @@ $Email = EmailValidate();
                     <tr>
                         <th align="left">Bus Name:</th>
                         <td>
-                            <input type="text" name="bus_name" id="Bus_name" placeholder="Bus Poribhohon"> <span style="color:red" id="nine"></span>
+                            <input type="text" name="bus_name" id="Bus_name" placeholder="Bus Poribhohon"> <span style="color:red" id="nine"><?php echo"$bus_name"?></span>
                         </td>
                     </tr>
             
                     <tr>
                         <th align="left">License Number:</th>
                         <td>
-                            <input type="text" name="License_number" id="Lic_num" placeholder="9645878521"> <span style="color:red" id="ten"></span>
+                            <input type="text" name="License_number" id="Lic_num" placeholder="9645878521"> <span style="color:red" id="ten"><?php echo"$license"?></span>
                         </td>
                     </tr>
                     <tr>
@@ -134,8 +145,8 @@ $Email = EmailValidate();
                             <input type="radio" name="bus_type" value='Non AC'>Non AC
                             <input type="radio" name="bus_type" value='Sleeper'>Sleeper
                             <input type="radio" name="bus_type" value='Luxury'>Luxury 
-                            <br>
-                            <span style="color:red" id="twelve"></span>
+                            
+                            <span style="color:red" id="twelve"><?php echo"$bus_type"?></span>
                         </td>
                         
                        
@@ -154,8 +165,8 @@ $Email = EmailValidate();
             <tr>
                 <th align="left">Agree to Terms & Conditions:</th>
                 <td>
-                    <input type="checkbox" name="terms" id="Terms"> I agree to the <a href="">Terms & Conditions</a> <br>
-                    <span style="color:red" id="thirteen"></span>
+                    <input type="checkbox" name="terms" id="Terms" > I agree to the <a href="">Terms & Conditions</a> 
+                    <span style="color:red" id="thirteen"><?php echo"$terms"?></span>
                 </td>
                 
             </tr>

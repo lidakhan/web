@@ -132,7 +132,7 @@ function terms_validation() {
 }
 
 
-// radio button
+// radio button (type of buses)
 function busTypeValidation() {
     let Bool = false;
     const busTypes = document.getElementsByName("bus_type");
