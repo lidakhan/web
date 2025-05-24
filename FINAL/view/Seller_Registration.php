@@ -1,5 +1,6 @@
 <?php
 include "../control/validation.php";
+include "../control/UserRegcontrol.php";
 $Sname = Namevalidate();
 $Email = EmailValidate();
 $Phone_num = PhoneValidate();
@@ -12,6 +13,7 @@ $bus_name = Bus_Name();
 $license = License_number();
 $bus_type = Bus_type();
 $terms = Terms_Condition();
+$file = file_handle();
 ?>
 
 
@@ -24,20 +26,21 @@ $terms = Terms_Condition();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Registation</title>
     <link rel="stylesheet" href="sellers.css">
+     
 </head>
 <body>
    
- 
+
 
 
 <div class="form-container">
-<h1 >Ticket Seller Registation</h1>
+<h1 >Ticket Seller Registation</h1><br>
     
-    <form method="post" action="">
+    <form method="post" action="" enctype="multipart/form-data">
                 
             <div class="box1">
                 
-                    <h3 style="color:yellow"><label>Seller Information</label></h3>
+                    <h3 style="color:red"><label>Seller Information</label></h3>
                         <table>
                             <tr>
                                 <th align="left">Seller Name:</th>
@@ -78,7 +81,7 @@ $terms = Terms_Condition();
 
             <div class="box2">
                 
-            <h3 style="color:yellow"> <label>Company Details</label>  </h3>
+            <h3 style="color:red"> <label>Company Details</label>  </h3>
                     <table>
                         <tr>
                             <th align="left">Company Name:</th>
@@ -115,7 +118,7 @@ $terms = Terms_Condition();
 
                 <div class="box3">
                 
-                    <h3 style="color:yellow"> <label>Business Details</label></h3>
+                    <h3 style="color:red"> <label>Business Details</label></h3>
                     <table>
                         <tr>
                             <th align="left">Bus Name:</th>
@@ -133,7 +136,7 @@ $terms = Terms_Condition();
                         <tr>
                             <th align="left">Upload Bus Documents:</th>
                             <td>
-                                <input type="file" name="business_documents" id="busi_doc" multiple >
+                                <input type="file" name="myfile" id="busi_doc" multiple > <span style="color:red" id="ten"><?php echo"$file"?></span>
                             </td>
                         </tr>
                         <tr>
@@ -177,10 +180,22 @@ $terms = Terms_Condition();
                     </td>
                 </tr>
             </table>  
+            
+
         </form>
+
+            <table>
+                <tr>
+                    <td align="left">
+                        <button type="button" onclick="location.href='Seller_login.php'" >
+                          Login/Already have account ?
+                        </button>
+                    </td>
+                </tr>
+            </table>
 </div>
 
 
-
+<!-- <script src="../MID/LAB4/validation.js"> -->   
 </body>
 </html>

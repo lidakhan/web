@@ -1,0 +1,85 @@
+ body{
+    background-color: rgb(92, 205, 215);
+ }
+
+.one {
+    border: 2px solid #1e90ff;      
+    margin: 0px;                 /* remove auto centering */
+    padding: 5px 20px;             
+    background-color: #509ae9;       
+    color: #07295a;                  
+    font-family: 'Segoe UI', sans-serif; 
+    border-radius: 12px;            
+    width: 100%;                    /* full width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    text-align: center;              
+    box-sizing: border-box;         /* include padding in width */
+}
+
+.two{
+    border: 2px solid #1e90ff;       
+    margin: 40px 0 40px 20px;               
+    padding: 10px 20px;              
+    background-color: #9FE2BF ;      
+    color: #003366;                 
+    font-family: 'Segoe UI', sans-serif; 
+    border-radius: 6px;            
+    max-width: 300px;               
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    text-align: left;              
+}
+
+.three {
+    position: absolute;
+    top: 120px;      /* top margin */
+    right: 10px; 
+
+    background-color: #335ce4;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.three:hover {
+    background-color: #0324a8;
+}
+
+
+
+
+.profile {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 2px 30px;
+            border: 2px solid #1e90ff;
+            border-radius: 10px;
+            background-color: #e6f2ff;
+            font-family: 'Segoe UI', sans-serif;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .profile p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .label {
+            font-weight: bold;
+            color: #1e90ff;
+        }
+        .profile img {
+            display: block;
+            margin: 20px auto;
+            max-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }

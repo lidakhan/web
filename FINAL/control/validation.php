@@ -156,11 +156,26 @@ function Terms_Condition(){
         if(!isset($_REQUEST['terms']) ){
             return $terms = "Confirm Terms and Condition !";
         }else{
-            return $Bustype = "Checkbox Clicked";
+            return $terms = "Checkbox Clicked";
         }
     }
  return "";
 }
+
+// For file handing
+function file_handle(){
+    $msg = "";
+    if(isset($_REQUEST['SUBMIT'])){
+        if(move_uploaded_file($_FILES["myfile"]["tmp_name"],"../uploads/".$_FILES["myfile"]["name"])){
+            return $msg = "File uploaded !";
+        }else{
+            return $msg = "File not found !";
+        }
+    }
+ return "";
+}
+
+
 
 
 ?>

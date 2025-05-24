@@ -1,0 +1,59 @@
+ .one {
+    border: 2px solid #1e90ff;      
+    margin: 0px;                 /* remove auto centering */
+    padding: 5px 20px;             
+    background-color: #509ae9;       
+    color: #07295a;                  
+    font-family: 'Segoe UI', sans-serif; 
+    border-radius: 12px;            
+    width: 100%;                    /* full width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    text-align: center;              
+    box-sizing: border-box;         /* include padding in width */
+}
+ 
+.three {
+    position: absolute;
+    top: 120px;      /* top margin */
+    right: 10px; 
+
+    background-color: #335ce4;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.three:hover {
+    background-color: #0324a8;
+}
+ 
+
+
+ table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 30px auto;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        th, td {
+            border: 1px solid #1e90ff;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #1e90ff;
+            color: white;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
