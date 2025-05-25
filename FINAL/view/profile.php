@@ -6,6 +6,7 @@ include "../control/profilecontrol.php";
 <head>
     <title>User Profile</title>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="logout.css">
 </head>
 <body>
     <div class="one">
