@@ -29,7 +29,7 @@ function CreateUser($conn, $seller_name, $email, $phone_number,$password,$confir
 }
 
 
-// Check login
+// Check login / READ - WRITE
 function UserLogin($conn,$seller_name,$email,$password){
     $querystring = " SELECT * FROM users WHERE seller_name = '$seller_name' and email = '$email' and password ='$password' ";
     $result = mysqli_query($conn,$querystring);
@@ -55,7 +55,7 @@ function deleteUser($conn, $userId) {
 
 
 
-// Check connection
+// CLOSE connection
 function closeCon($conn) {
     if ($conn) {
         mysqli_close($conn);

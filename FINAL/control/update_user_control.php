@@ -48,7 +48,7 @@ if (isset($_POST['update'])) {
 
     if (mysqli_query($conn, $sql)) {
         echo "User updated successfully.<br>";
-        echo "<a href='../view/admin.php'>🔙 Back to Admin Page</a>";
+        echo "<a href='../view/admin.php'> Back to Admin Page</a>";
     } else {
         echo "Error: " . mysqli_error($conn);
     }

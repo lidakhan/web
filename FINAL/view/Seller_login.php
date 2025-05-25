@@ -18,7 +18,7 @@ include "../control/adminlogincontrol.php"
 <body>
    
 <div class="form-container">
-<h1 >Ticket Seller Login</h1><br>
+<h1 >Ticket Customer Login</h1><br>
     
     <form method="post" action="" >
                 
@@ -27,16 +27,16 @@ include "../control/adminlogincontrol.php"
                         <table>
                             
                             <tr>
-                                <th align="left">Seller Name:</th>
+                                <th align="left">Customer Name:</th>
                                 <td class="field-group">
-                                    <input type="text" name="seller_name" id="S_name" placeholder="Kaushik"> 
+                                    <input type="text" name="seller_name" id="S_name" placeholder="Mukti"> 
 
                                 </td> 
                             </tr>
                             <tr>
                                 <th align="left">Email Address:</th>
                                 <td>
-                                    <input type="text" name="email" id="email" placeholder="user@gmail.com"> 
+                                    <input type="text" name="email" id="email" placeholder="mukti@gmail.com"> 
                                 </td>
                             </tr>
                             <tr>

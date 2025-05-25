@@ -1,6 +1,8 @@
 <?php
-include "../control/validation.php";
-include "../control/UserRegcontrol.php";
+include '../control/UserRegcontrol.php';
+include '../control/validation.php';
+
+
 $Sname = Namevalidate();
 $Email = EmailValidate();
 $Phone_num = PhoneValidate();
@@ -14,7 +16,10 @@ $license = License_number();
 $bus_type = Bus_type();
 $terms = Terms_Condition();
 $file = file_handle();
+
+
 ?>
+
 
 
 
@@ -40,12 +45,12 @@ $file = file_handle();
                 
             <div class="box1">
                 
-                    <h3 style="color:red"><label>Seller Information</label></h3>
+                    <h3 style="color:red"><label>Customer Information</label></h3>
                         <table>
                             <tr>
-                                <th align="left">Seller Name:</th>
+                                <th align="left">Customer Name:</th>
                                 <td class="field-group">
-                                    <input type="text" name="seller_name" id="S_name" placeholder="Kaushik"> <span style="color:red"><?php echo "$Sname" ?></span>
+                                    <input type="text" name="seller_name" id="S_name" placeholder="Mukti"> <span style="color:red"><?php echo "$Sname" ?></span>
 
                                 </td> 
                             </tr>
@@ -196,6 +201,6 @@ $file = file_handle();
 </div>
 
 
-<!-- <script src="../MID/LAB4/validation.js"> -->   
+ <!-- <script src="../MID/LAB4/validation.js">  -->
 </body>
 </html>
